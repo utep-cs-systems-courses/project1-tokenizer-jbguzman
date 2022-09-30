@@ -2,9 +2,9 @@
 
 int main()  
 {
-  char str;
+  char str[100];
   printf("$ ");
-  scanf("%s\n", str);
+  scanf("%[^\n]s", str);
   printf(str);
   return 0;
     }
