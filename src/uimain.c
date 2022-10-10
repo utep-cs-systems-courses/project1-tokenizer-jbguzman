@@ -1,11 +1,13 @@
 #include <stdio.h>
 
+#define LIMIT 50
 int main()  
 {
-  char str[100];
+  char str[LIMIT];
   printf("$ ");
-  scanf("%[^\n]s", str);
-  printf(str\n);
+  fgets(str, LIMIT, stdin);
+  printf("str is: %s\n", str);
+  
   return 0;
     }
 
